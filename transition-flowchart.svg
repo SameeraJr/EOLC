@@ -1,0 +1,181 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1000 1400">
+  <!-- Styles -->
+  <defs>
+    <style>
+      .process-box {
+        fill: #d4e6f1;
+        stroke: #2980b9;
+        stroke-width: 2;
+        rx: 10;
+        ry: 10;
+      }
+      .decision-box {
+        fill: #fdebd0;
+        stroke: #e67e22;
+        stroke-width: 2;
+      }
+      .start-end-box {
+        fill: #d5f5e3;
+        stroke: #27ae60;
+        stroke-width: 2;
+        rx: 20;
+        ry: 20;
+      }
+      .documentation-box {
+        fill: #ebdef0;
+        stroke: #8e44ad;
+        stroke-width: 2;
+        rx: 10;
+        ry: 10;
+      }
+      .arrow {
+        fill: none;
+        stroke: #333;
+        stroke-width: 2;
+        marker-end: url(#arrowhead);
+      }
+      .heading-text {
+        font-family: Arial, sans-serif;
+        font-size: 24px;
+        font-weight: bold;
+        text-anchor: middle;
+      }
+      .text {
+        font-family: Arial, sans-serif;
+        font-size: 14px;
+        text-anchor: middle;
+      }
+      .small-text {
+        font-family: Arial, sans-serif;
+        font-size: 12px;
+        text-anchor: middle;
+      }
+      .yes-no-text {
+        font-family: Arial, sans-serif;
+        font-size: 16px;
+        font-weight: bold;
+      }
+    </style>
+    
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#333" />
+    </marker>
+  </defs>
+  
+  <!-- Title -->
+  <text x="500" y="40" class="heading-text">Transitioning Patients in the Last Hours and Days of Life (PILHDL)</text>
+  <text x="500" y="70" class="heading-text">From ICU to General Wards</text>
+  
+  <!-- Start -->
+  <rect x="350" y="100" width="300" height="60" class="start-end-box" />
+  <text x="500" y="135" class="text">Patient recognized as being in the last hours or days of life</text>
+  
+  <!-- Arrow -->
+  <path d="M 500 160 L 500 190" class="arrow" />
+  
+  <!-- Assessment -->
+  <rect x="300" y="190" width="400" height="80" class="process-box" />
+  <text x="500" y="225" class="text">Multidisciplinary assessment of transition suitability</text>
+  <text x="500" y="245" class="small-text">(ICU Consultant, ICU Nurse, Specialist Palliative Care Team)</text>
+  
+  <!-- Arrow -->
+  <path d="M 500 270 L 500 300" class="arrow" />
+  
+  <!-- Decision 1 -->
+  <polygon points="500,300 650,375 500,450 350,375" class="decision-box" />
+  <text x="500" y="370" class="text">Meets ALL transition</text>
+  <text x="500" y="390" class="text">criteria?</text>
+  
+  <!-- Arrow - No -->
+  <path d="M 350 375 L 200 375 L 200 600" class="arrow" />
+  <text x="290" y="365" class="yes-no-text">No</text>
+  
+  <!-- Arrow - Yes -->
+  <path d="M 650 375 L 800 375 L 800 430" class="arrow" />
+  <text x="690" y="365" class="yes-no-text">Yes</text>
+  
+  <!-- Continue ICU Care -->
+  <rect x="100" y="600" width="200" height="80" class="process-box" />
+  <text x="200" y="630" class="text">Continue care in ICU</text>
+  <text x="200" y="650" class="text">Reassess daily</text>
+  
+  <!-- SPC Referral -->
+  <rect x="700" y="430" width="200" height="60" class="process-box" />
+  <text x="800" y="460" class="text">Refer to SPC Team if not already involved</text>
+  
+  <!-- Arrow -->
+  <path d="M 800 490 L 800 520" class="arrow" />
+  
+  <!-- Documentation -->
+  <rect x="650" y="520" width="300" height="100" class="documentation-box" />
+  <text x="800" y="545" class="text">Complete required documentation:</text>
+  <text x="800" y="565" class="small-text">• Continuing Care Agreement (CCA)</text>
+  <text x="800" y="585" class="small-text">• PILHDL Transition Checklist</text>
+  <text x="800" y="605" class="small-text">• Medication Reconciliation Form</text>
+  
+  <!-- Arrow -->
+  <path d="M 800 620 L 800 650" class="arrow" />
+  
+  <!-- Family Discussion -->
+  <rect x="700" y="650" width="200" height="60" class="process-box" />
+  <text x="800" y="680" class="text">Family meeting to discuss transition plan</text>
+  
+  <!-- Arrow -->
+  <path d="M 800 710 L 800 740" class="arrow" />
+  
+  <!-- Ward Communication -->
+  <rect x="700" y="740" width="200" height="60" class="process-box" />
+  <text x="800" y="765" class="text">Contact receiving ward and</text>
+  <text x="800" y="785" class="text">confirm bed availability</text>
+  
+  <!-- Arrow -->
+  <path d="M 800 800 L 800 830" class="arrow" />
+  
+  <!-- Decision 2 -->
+  <polygon points="800,830 900,880 800,930 700,880" class="decision-box" />
+  <text x="800" y="875" class="text">Ward prepared and</text>
+  <text x="800" y="895" class="text">ready to receive?</text>
+  
+  <!-- Arrow - No -->
+  <path d="M 700 880 L 650 880 L 650 950 L 700 950" class="arrow" />
+  <text x="670" y="870" class="yes-no-text">No</text>
+  
+  <!-- Delay Transfer -->
+  <rect x="700" y="950" width="200" height="60" class="process-box" />
+  <text x="800" y="975" class="text">Delay transfer until ward is ready</text>
+  <text x="800" y="995" class="text">Continue ICU care</text>
+  
+  <!-- Arrow back to check -->
+  <path d="M 800 1010 L 800 1040 L 650 1040 L 650 880 L 700 880" class="arrow" />
+  
+  <!-- Arrow - Yes from Decision 2 -->
+  <path d="M 900 880 L 950 880 L 950 1080 L 900 1080" class="arrow" />
+  <text x="930" y="870" class="yes-no-text">Yes</text>
+  
+  <!-- Medication Review -->
+  <rect x="700" y="1080" width="200" height="80" class="process-box" />
+  <text x="800" y="1105" class="text">Ensure appropriate medications</text>
+  <text x="800" y="1125" class="text">are prescribed and available</text>
+  <text x="800" y="1145" class="small-text">(Including anticipatory medications)</text>
+  
+  <!-- Arrow -->
+  <path d="M 800 1160 L 800 1190" class="arrow" />
+  
+  <!-- Physical Transfer -->
+  <rect x="700" y="1190" width="200" height="60" class="process-box" />
+  <text x="800" y="1215" class="text">Complete physical transfer</text>
+  <text x="800" y="1235" class="text">with handover</text>
+  
+  <!-- Arrow -->
+  <path d="M 800 1250 L 800 1280" class="arrow" />
+  
+  <!-- Follow-up -->
+  <rect x="650" y="1280" width="300" height="80" class="process-box" />
+  <text x="800" y="1305" class="text">Post-transition follow-up:</text>
+  <text x="800" y="1325" class="small-text">• ICU team follow-up within 24 hours</text>
+  <text x="800" y="1345" class="small-text">• SPC team review within 24 hours</text>
+  
+  <!-- Loop back arrow to start -->
+  <path d="M 200 680 L 200 900 L 100 900 L 100 140 L 350 140" class="arrow" />
+  <text x="150" y="880" class="small-text">Reassess daily</text>
+</svg>
